@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="loginbuttn" type="id">loginbutton</item>
+    <item name="loginbutn" type="id">loginbttn</item>
+    <item name="createaccount" type="id">createaccnt</item>
+    <item name="continueasguest" type="id">continueasguest</item>
+</resources>

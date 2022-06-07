@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">The Recipe Master</string>
+    <string name="hello_world">Hello world</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="Password">Password</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="CREATE">CREATE ACCOUNT</string>
+    <string name="CONTINUE">CONTINUE AS GUEST</string>
+</resources>

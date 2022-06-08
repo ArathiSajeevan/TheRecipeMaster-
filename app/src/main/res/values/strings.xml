@@ -9,4 +9,6 @@
     <string name="LOGIN">LOGIN</string>
     <string name="CREATE">CREATE ACCOUNT</string>
     <string name="CONTINUE">CONTINUE AS GUEST</string>
+    <string name="open_activity_2">open activity 2</string>
+    <string name="incorrect_attempt">incorrect attempt</string>
 </resources>

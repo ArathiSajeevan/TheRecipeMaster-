@@ -4,83 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="MissingClass">
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
 
 
     <TextView
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:layout_margin="60dp"
+        android:layout_marginBottom="32dp"
         android:gravity="center"
         android:text="@string/login"
         android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="27dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/login"
+        android:layout_marginBottom="20dp"
         android:hint="@string/username"
-        android:layout_margin="10dp"
-        android:padding="20dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="97dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@id/login"
+        app:layout_constraintBottom_toTopOf="@+id/TextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/login"/>
+
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/TextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/username"
-        android:layout_margin="10dp"
+        android:inputType="textPassword"
         android:hint="@string/Password"
-        android:padding="20dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="176dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username" />
 
     <Button
-        android:id="@id/loginbutn"
+        android:id="@+id/loginbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password"
-        android:layout_margin="10dp"
-        android:text="@string/LOGIN"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/teal_200"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="276dp" />
+        android:text="@string/LOGIN"
+        app:layout_constraintStart_toStartOf="@+id/TextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/TextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword"/>
 
     <Button
-        android:id="@id/createaccount"
+        android:id="@+id/createaccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/loginbutn"
-        android:layout_margin="10dp"
+        android:layout_below="@+id/loginbutton"
         android:backgroundTint="@color/teal_200"
         android:text="@string/CREATE"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="558dp" />
+        app:layout_constraintBottom_toTopOf="@+id/continueasguest"
+        app:layout_constraintEnd_toEndOf="@+id/loginbutton"
+        app:layout_constraintStart_toStartOf="@+id/loginbutton" />
 
     <Button
-        android:id="@id/continueasguest"
+        android:id="@+id/continueasguest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/createaccount"
-        android:layout_margin="10dp"
+        android:layout_below="@+id/createaccount"
         android:backgroundTint="@color/teal_200"
         android:text="@string/CONTINUE"
-        tools:ignore="MissingConstraints,UnknownId"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="629dp" />
+        app:layout_constraintStart_toStartOf="@+id/createaccount"
+        app:layout_constraintEnd_toEndOf="@+id/createaccount"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
